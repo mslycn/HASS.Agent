@@ -256,3 +256,25 @@ It's pretty feature complete if you just want commands, sensors, quickactions an
 You'll need to have .NET Framework 4.8 installed on your PC, which you can [download here](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net48-web-installer).
 
 If you find any bugs, feel free to [create a ticket](https://github.com/LAB02-Research/HASS.Agent/issues) and I'll try to patch it.
+
+## Documents
+
+- [License](./LICENSE.md)
+- Contribution Guidelines: [English](./CONTRIBUTING.md) | [简体中文](./doc/CONTRIBUTING_zh.md)
+- [ChangeLog](./CHANGELOG.md)
+- Development Documents: https://developers.home-assistant.io/docs/creating_component_index
+
+## Directory Structure
+
+- miot: core code.
+- miot/miot_client: Adding a login user in the integration needs adding a miot_client instance.
+- miot/miot_cloud: Contains functions related to the cloud service, including OAuth login process, HTTP interface functions (to get the user information, to send the device control command, etc.)
+- miot/miot_device: Device entity, including device information, processing logic of property, event and action.
+- miot/miot_mips: Message bus for subscribing and publishing method.
+- miot/miot_spec: Parse MIoT-Spec-V2.
+- miot/miot_lan: Device LAN control, including device discovery, device control, etc.
+- miot/miot_mdns: Central hub gateway service LAN discovery.
+- miot/miot_network: Obtain network status and network information.
+- miot/miot_storage: File storage for the integration.
+- miot/test: Test scripts.
+- config_flow: Config flow.
