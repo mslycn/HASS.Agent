@@ -15,8 +15,7 @@
 
 [English](./README.md) | [简体中文](./doc/README_zh.md)
 
-Local disk:F:\developer_HASS.Agent\HASS.Agent
-Remote:https://github.com/mslycn/HASS.Agent.git
+
 
 HASS.Agent is a Windows-based client (*companion*) application for [Home Assistant](https://www.home-assistant.io), developed in .NET 9.
 
@@ -278,3 +277,8 @@ If you find any bugs, feel free to [create a ticket](https://github.com/LAB02-Re
 - miot/miot_storage: File storage for the integration.
 - miot/test: Test scripts.
 - config_flow: Config flow.
+
+## .NET developer
+- Local disk:F:\developer_HASS.Agent\HASS.Agent
+- Remote:https://github.com/mslycn/HASS.Agent.git
+
