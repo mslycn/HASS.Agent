@@ -22,13 +22,36 @@ HASS.Agent is **completely free**, and will always stay that way without restric
 
 ----
 
-Project	Description
+## Project	Description
 
 ~~~
 HASS.Agent	Main client, containing the UI, runs in userspace, by default without elevation
+
 HASS.Agent.Satellite.Service	Windows client, runs under SYSTEM account
-HASS.Agent.Shared	Library, published as a nuget, contains all commands, sensors, shared functions and enums
+
+HASS.Agent.Shared	
+
+Library,Shared functions and models. published as a nuget, contains all commands, sensors, shared functions and enums.used by both the main client(HASS.Agent) and the satellite service(HASS.Agent.Satellite.Service), but it doesn't have any UI dependencies so it can be published as a separate nuget package
+
 ~~~
+## Project structre
+
+~~~
+HASS.Agent/
+├── HASS.Agent/
+│   ├──HASS.Agent.Shared             -->used by the main client
+│   └── README.md
+├── HASS.Agent.Satellite.Service/
+│   ├──HASS.Agent.Shared             -->used by the satellite service
+│   └── README.md
+├── HASS.Agent.Shared/    ->System.Windows.Forms is used in this project, but it is not a dependency for the main client, so we can publish it as a separate nuget package
+│   └── README.md
+└── 
+    └── 
+        └── 
+
+~~~
+
 
 ### Contents
 
