@@ -11,7 +11,7 @@ using HASS.Agent.Satellite.Service.Functions;
 using HASS.Agent.Satellite.Service.Settings;
 using MQTTnet;
 using MQTTnet.Adapter;
-using MQTTnet.Client;
+using MQTTnet.;
 using MQTTnet.Exceptions;
 using MQTTnet.Extensions.ManagedClient;
 using Serilog;
@@ -84,7 +84,7 @@ namespace HASS.Agent.Satellite.Service.MQTT
                 if (Variables.DeviceConfig == null)
                     CreateDeviceConfigModel();
 
-                _mqttClient = Variables.MqttFactory.CreateManagedMqttClient();
+                _mqttClient = Variables.MqttFactory.CreateMqttClient();
                 _mqttClient.ConnectedAsync += OnMqttConnected;
                 _mqttClient.ConnectingFailedAsync += OnMqttConnectionFailed;
                 _mqttClient.ApplicationMessageReceivedAsync += e => HandleMessageReceived(e.ApplicationMessage);
