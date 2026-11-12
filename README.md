@@ -1,14 +1,8 @@
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/hass-agent/HASS.Agent)](https://github.com/hass-agent/HASS.Agent/releases/)
-[![license](https://img.shields.io/badge/license-MIT-blue)](#license)
-[![OS - Windows](https://img.shields.io/badge/OS-Windows-blue?logo=windows&logoColor=white)](https://www.microsoft.com/ "Go to Microsoft homepage")
-[![dotnet](https://img.shields.io/badge/.NET-8.0-blue)](https://img.shields.io/badge/.NET-8.0-blue)
-![GitHub all releases](https://img.shields.io/github/downloads/hass-agent/HASS.Agent/total?color=blue)
-![GitHub latest](https://img.shields.io/github/downloads/hass-agent/HASS.Agent/latest/total?color=blue)
-[![Discord](https://img.shields.io/badge/dynamic/json?color=blue&label=Discord&logo=discord&logoColor=white&query=presence_count&suffix=%20Online&url=https://discord.com/api/guilds/1173033284519862392/widget.json)](https://discord.com/invite/JfZj98xqJr)
+local path : F:\developer_HASS.Agent
 
-<a href="https://github.com/hass-agent/HASS.Agent/">
-    <img src="https://raw.githubusercontent.com/LAB02-Research/HASS.Agent/main/images/logo_128.png" alt="HASS.Agent logo" title="HASS.Agent" align="right" height="128" />
-</a>
+git path : https://github.com/mslycn/HASS.Agent
+
+blog:
 
 # HASS.Agent
 
@@ -38,13 +32,13 @@ Library,Shared functions and models. published as a nuget, contains all commands
 
 ~~~
 HASS.Agent/
-├── HASS.Agent/
+├── HASS.Agent/                       -->main client project, UI
 │   ├──HASS.Agent.Shared             -->used by the main client
 │   └── README.md
-├── HASS.Agent.Satellite.Service/
+├── HASS.Agent.Satellite.Service/    -->Windows Service project, runs under SYSTEM account, used to collect sensor data and execute commands even when no user is logged in
 │   ├──HASS.Agent.Shared             -->used by the satellite service
 │   └── README.md
-├── HASS.Agent.Shared/    ->System.Windows.Forms is used in this project, but it is not a dependency for the main client, so we can publish it as a separate nuget package
+├── HASS.Agent.Shared/    ->System.Windows.Forms is used in this project, MQTT
 │   └── README.md
 └── 
     └── 
