@@ -1,3 +1,12 @@
+202611 update to .net sdk 11
+
+update to .net 11 sdk
+
+updated TargetFramework from net8.0-windows10 to net11.0-windows10
+
+run ok
+
+
 
 202605
 

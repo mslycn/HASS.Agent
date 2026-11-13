@@ -6,7 +6,7 @@ blog:
 
 # HASS.Agent
 
-HASS.Agent is a Windows-based client (*companion*) application for [Home Assistant](https://www.home-assistant.io), developed in .NET 8.
+HASS.Agent is a Windows-based client (*companion*) application for [Home Assistant](https://www.home-assistant.io), developed in .NET 11.
 
 Click [here](https://github.com/hass-agent/HASS.Agent/releases/latest/download/HASS.Agent.Installer.exe) to download the latest installer.
 
@@ -259,7 +259,7 @@ Everything on the HASS.Agent platform is released under the [MIT license](https:
 
 ### Legacy
 
-HASS.Agent is a .NET 8 application. If for some reason you can't install .NET 8, you can use the last .NET Framework 4.8 version also developed by Sam:
+HASS.Agent is a .NET 11 application. If for some reason you can't install .NET 11, you can use the last .NET Framework 4.8 version also developed by Sam:
 
 [v2022.3.8](https://github.com/LAB02-Research/HASS.Agent/releases/tag/v2022.3.8)
 
